@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div style="display: flex; flex-direction: row">
+    
+    <div style="flex-basis: 33%">
+      <list-movie />
+    </div>
+    
+    <div style="flex-basis: 33%">
+      <list-friends />
+    </div>
+    
+    <div style="flex-basis: 33%">
+      <list-game />
+    </div>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ListMovie from '@/components/ListMovie.vue'
+import ListFriends from '@/components/ListFriends.vue'
+import ListGame from '@/components/ListGame.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ListMovie,
+    ListFriends,
+    ListGame
   }
 }
 </script>
